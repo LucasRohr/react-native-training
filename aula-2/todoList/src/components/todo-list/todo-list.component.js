@@ -1,18 +1,21 @@
 import React from 'react';
-import styles from './todo-list.style';
 import {ListItem} from './components';
+import {FlatList} from 'react-native';
 
-const TodoList = ({todoList = [], checkTodo, removeTodo}) => {
-  return todoList.map((todo, key) => (
-    <ListItem
-      key={key}
-      id={todo.id}
-      description={todo.description}
-      isChecked={todo.isChecked}
-      checkTodo={checkTodo}
-      removeTodo={removeTodo}
-    />
-  ));
-};
+const TodoList = ({todoList = [], checkTodo, removeTodo}) => (
+  <FlatList
+    data={todoList}
+    showsVerticalScrollIndicator={false}
+    renderItem={({item}) => (
+      <ListItem
+        id={item.id}
+        todo={item.todo}
+        isChecked={item.isChecked}
+        checkTodo={checkTodo}
+        removeTodo={removeTodo}
+      />
+    )}
+  />
+);
 
 export {TodoList};

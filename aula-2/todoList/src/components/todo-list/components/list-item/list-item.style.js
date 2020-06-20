@@ -19,4 +19,11 @@ export default StyleSheet.create({
     fontWeight: '600',
     marginHorizontal: 12,
   },
+
+  alertButtonText: {
+    fontSize: 30,
+    lineHeight: 24,
+    fontWeight: '500',
+    textTransform: 'uppercase',
+  },
 });

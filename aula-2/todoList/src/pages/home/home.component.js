@@ -1,29 +1,52 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import styles from './home.style';
-import {View, ScrollView, Alert} from 'react-native';
+import {View} from 'react-native';
 import {Button, Input, TodoList} from '../../components';
 import {COLORS} from '../../constants';
+import {createAlert, StorageHelper} from '../../helpers';
 
 const Home = () => {
-  const [todoText, setTodoText] = useState('');
+  const [title, setTitle] = useState('');
+  const [description, setDescription] = useState('');
   const [todoList, setTodoList] = useState([]);
 
-  const createAlert = ({title, message, confirmButtonLabel}) =>
-    Alert.alert(title, message, [{text: confirmButtonLabel}], {
-      cancelable: false,
+  useEffect(() => {
+    getStoredTodoList();
+  }, []);
+
+  useEffect(() => {
+    setStoredTodoList();
+  }, [todoList]);
+
+  const getStoredTodoList = async () => {
+    await StorageHelper.getItem('todoList').then(todoList => {
+      setTodoList(todoList);
     });
+  };
+
+  const setStoredTodoList = async () => {
+    await StorageHelper.setItem('todoList', todoList);
+  };
 
   const onAddTodo = () => {
-    if (todoText) {
+    const isTodoValid = title && description;
+
+    if (isTodoValid) {
       setTodoList(prevTodoList => [
         ...prevTodoList,
-        {id: todoList.length + 1, description: todoText, isChecked: false},
+        {
+          key: `key ${todoList.length + 1}`,
+          id: todoList.length + 1,
+          todo: {title, description},
+          isChecked: false,
+        },
       ]);
     } else {
       createAlert({
         title: 'Erro ao adicionar tarefa',
-        message: 'Você deve preencher o campo de tarefa para adicionar uma.',
-        confirmButtonLabel: 'Ok ,entendi!',
+        message:
+          'Você deve preencher os campos de To Do e Descrição para adicionar uma tarefa.',
+        rightButtonConfig: {label: 'Ok ,entendi!'},
       });
     }
   };
@@ -49,22 +72,28 @@ const Home = () => {
       <Input
         placeholder="To do..."
         placeholderTextColor={COLORS.GRAY}
-        onChangeText={setTodoText}
+        onChangeText={setTitle}
+      />
+
+      <Input
+        additionalStyle={styles.descriptionInput}
+        placeholder="Descrição"
+        placeholderTextColor={COLORS.GRAY}
+        multiline
+        onChangeText={setDescription}
       />
 
       <Button title="Adicionar" onPress={onAddTodo} />
 
       <View style={styles.separator} />
 
-      <ScrollView>
-        <View style={styles.content}>
-          <TodoList
-            todoList={todoList}
-            checkTodo={checkTodo}
-            removeTodo={removeTodo}
-          />
-        </View>
-      </ScrollView>
+      <View style={styles.content}>
+        <TodoList
+          todoList={todoList}
+          checkTodo={checkTodo}
+          removeTodo={removeTodo}
+        />
+      </View>
     </View>
   );
 };

@@ -18,4 +18,11 @@ export default StyleSheet.create({
   content: {
     flex: 1,
   },
+
+  descriptionInput: {
+    height: 112,
+    marginTop: 16,
+    textAlignVertical: 'top',
+    paddingTop: 15,
+  },
 });

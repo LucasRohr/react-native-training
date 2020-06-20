@@ -1,12 +1,35 @@
 import React from 'react';
 import styles from './list-item.style';
-import {View, Text} from 'react-native';
+import {Text, TouchableOpacity} from 'react-native';
 import {MyIcon} from '../../../my-icon';
 import {COLORS} from '../../../../constants';
+import {createAlert} from '../../../../helpers';
 
-const ListItem = ({id, description, isChecked, checkTodo, removeTodo}) => {
+const ListItem = ({id, todo, isChecked, checkTodo, removeTodo}) => {
+  const renderTodoAlert = () => {
+    createAlert({
+      title: todo.title,
+      message: todo.description,
+
+      leftButtonConfig: {
+        label: isChecked ? 'Desfazer' : 'Feito',
+        onPress: () => checkTodo(id),
+        style: styles.alertButtonText,
+      },
+
+      rightButtonConfig: {
+        label: 'Excluir',
+        onPress: () => removeTodo(id),
+        style: styles.alertButtonText,
+      },
+    });
+  };
+
   return (
-    <View style={[styles.listItem, {opacity: isChecked ? 0.8 : 1}]}>
+    <TouchableOpacity
+      onPress={renderTodoAlert}
+      activeOpacity={0.7}
+      style={styles.listItem}>
       <MyIcon
         name="check"
         color={isChecked ? COLORS.BLACK : COLORS.GREEN}
@@ -16,9 +39,12 @@ const ListItem = ({id, description, isChecked, checkTodo, removeTodo}) => {
       <Text
         style={[
           styles.itemText,
-          {textDecorationLine: isChecked ? 'line-through' : 'none'},
+          {
+            textDecorationLine: isChecked ? 'line-through' : 'none',
+            color: isChecked ? COLORS.GRAY : COLORS.BLACK,
+          },
         ]}>
-        {description}
+        {todo.title}
       </Text>
 
       <MyIcon
@@ -26,7 +52,7 @@ const ListItem = ({id, description, isChecked, checkTodo, removeTodo}) => {
         color={isChecked ? COLORS.BLACK : COLORS.RED}
         onPress={() => removeTodo(id)}
       />
-    </View>
+    </TouchableOpacity>
   );
 };
 
