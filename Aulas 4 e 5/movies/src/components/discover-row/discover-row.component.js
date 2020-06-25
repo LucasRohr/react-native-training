@@ -3,7 +3,7 @@ import styles from './discover-row.style';
 import {View, Text, FlatList} from 'react-native';
 import {RowCard} from './components';
 
-const DiscoverRow = ({title, movies, onPressCard}) => (
+const DiscoverRow = ({title, movies, onPressCard, index, animatedValue}) => (
   <View style={styles.container}>
     <Text style={styles.title}> {title} </Text>
     <FlatList
@@ -18,6 +18,8 @@ const DiscoverRow = ({title, movies, onPressCard}) => (
           title={item.title}
           voteAverage={item.vote_average}
           onPress={onPressCard}
+          index={index}
+          animatedValue={animatedValue}
         />
       )}
     />

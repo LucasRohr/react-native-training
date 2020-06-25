@@ -1,14 +1,26 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffect, useRef, useMemo} from 'react';
 import 'react-native-gesture-handler';
-import {View, ActivityIndicator, FlatList} from 'react-native';
+import {FlatList, Animated} from 'react-native';
 import {DiscoverService} from '../../services';
-import {DiscoverRow} from '../../components/discover-row/discover-row.component';
+import {DiscoverRow, Loader} from '../../components';
 
 import styles from './discover.style';
 
 const DiscoverScreen = ({navigation}) => {
   const [discoveries, setDiscoveries] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
+
+  const animatedValue = useRef(new Animated.Value(0)).current;
+
+  const animation = useMemo(
+    () =>
+      Animated.spring(animatedValue, {
+        toValue: 1,
+        tension: 20,
+        useNativeDriver: true,
+      }),
+    [animatedValue],
+  );
 
   const getDiscoveries = async () => {
     setIsLoading(true);
@@ -17,38 +29,35 @@ const DiscoverScreen = ({navigation}) => {
     if (result) {
       setIsLoading(false);
       setDiscoveries(result);
+      animation.start();
     }
   };
 
   useEffect(() => {
     getDiscoveries();
-  }, []);
+  }, [animation]);
 
-  function onCardPress() {
-    navigation.navigate('MovieDetailsScreen');
-  }
-
-  const renderLoader = () => (
-    <View style={styles.loaderContainer}>
-      <ActivityIndicator size="large" />
-    </View>
-  );
+  const onCardPress = (movieId, movieName) => {
+    navigation.navigate('MovieDetailsScreen', {movieId, movieName});
+  };
 
   const renderDiscoveries = () => (
     <FlatList
       data={discoveries}
       keyExtractor={(item, index) => `key - ${index}`}
-      renderItem={({item}) => (
+      renderItem={({item, index}) => (
         <DiscoverRow
           title={item.title}
           movies={item.movies}
           onPressCard={onCardPress}
+          index={index}
+          animatedValue={animatedValue}
         />
       )}
     />
   );
 
-  return isLoading ? renderLoader() : renderDiscoveries();
+  return isLoading ? <Loader /> : renderDiscoveries();
 };
 
 export {DiscoverScreen};

@@ -1,9 +1,9 @@
 import React, {useState, useEffect} from 'react';
 import 'react-native-gesture-handler';
 import styles from './artists.style';
-import {View, FlatList, ActivityIndicator} from 'react-native';
+import {View, FlatList} from 'react-native';
 import {ArtistsService} from '../../services';
-import {ArtistCard} from '../../components';
+import {ArtistCard, Loader} from '../../components';
 
 const ArtistsScreen = ({navigation}) => {
   const [artists, setArtists] = useState([]);
@@ -23,11 +23,11 @@ const ArtistsScreen = ({navigation}) => {
     getArtists();
   }, []);
 
-  const onArtistCardPress = () => {
-    navigation.navigate('ArtistsDetailsScreen');
+  const onArtistCardPress = (artistId, artistName) => {
+    navigation.navigate('ArtistsDetailsScreen', {artistId, artistName});
   };
 
-  const formatCard = columns => {
+  const formatCard = (artists, columns) => {
     const emptySpaces = columns - (artists.length % columns);
     for (let id = 0; id < emptySpaces; id++) {
       artists.push({id: `blank-${id + 1}-${Math.random()}`, empty: true});
@@ -36,26 +36,22 @@ const ArtistsScreen = ({navigation}) => {
     return artists;
   };
 
-  const renderLoader = () => (
-    <View style={styles.loaderContainer}>
-      <ActivityIndicator size="large" />
-    </View>
-  );
-
   const renderCards = () => (
     <View style={styles.listContainer}>
       <FlatList
         numColumns={3}
-        data={formatCard(3)}
+        data={formatCard(artists, 3)}
         showsVerticalScrollIndicator={false}
         keyExtractor={(artistItem, index) => artistItem.id}
-        renderItem={({item}) => {
+        renderItem={({item, index}) => {
           return (
             <ArtistCard
+              id={item.id}
               name={item.name}
               image={item.profile_path}
               empty={item.empty}
               onPress={onArtistCardPress}
+              index={index}
             />
           );
         }}
@@ -63,7 +59,7 @@ const ArtistsScreen = ({navigation}) => {
     </View>
   );
 
-  return isLoading ? renderLoader() : renderCards();
+  return isLoading ? <Loader /> : renderCards();
 };
 
 export {ArtistsScreen};

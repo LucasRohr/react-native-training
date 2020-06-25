@@ -4,9 +4,9 @@ export default StyleSheet.create({
   container: {
     minWidth: 130,
     maxWidth: 130,
-    justifyContent: 'space-between',
+    justifyContent: 'flex-start',
     alignItems: 'center',
-    paddingBottom: 10,
+    paddingBottom: 22,
     backgroundColor: 'white',
     marginVertical: 5,
     marginHorizontal: 5,
@@ -14,10 +14,10 @@ export default StyleSheet.create({
   },
 
   bottomTextContainer: {
-    paddingVertical: 5,
-    paddingHorizontal: 15,
     height: 45,
-    justifyContent: 'flex-end',
+    paddingHorizontal: 15,
+    justifyContent: 'space-between',
+    alignItems: 'center',
   },
 
   movieTitle: {
@@ -35,7 +35,9 @@ export default StyleSheet.create({
   },
 
   imageContainer: {
-    height: 115,
+    width: '100%',
+    height: 185,
+    marginBottom: 5,
   },
 
   image: {

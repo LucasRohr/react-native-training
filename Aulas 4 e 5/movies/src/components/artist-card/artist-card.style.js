@@ -12,6 +12,10 @@ export default (styles = StyleSheet.create({
     borderRadius: 4,
   },
 
+  animatedContainer: {
+    width: '100%',
+  },
+
   bottomTextContainer: {
     paddingVertical: 5,
     paddingHorizontal: 15,
@@ -26,6 +30,7 @@ export default (styles = StyleSheet.create({
 
   imageContainer: {
     height: 115,
+    width: '100%',
   },
 
   image: {

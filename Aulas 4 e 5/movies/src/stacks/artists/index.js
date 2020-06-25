@@ -7,7 +7,15 @@ const Stack = createStackNavigator();
 
 export function ArtistsStack() {
   return (
-    <Stack.Navigator>
+    <Stack.Navigator
+      screenOptions={{
+        headerTitleAlign: 'center',
+        headerTintColor: '#4F4F4F',
+        headerStyle: {
+          elevation: 0,
+          shadowOpacity: 0,
+        },
+      }}>
       <Stack.Screen
         options={{title: 'Artists', headerTitleAlign: 'center'}}
         component={ArtistsScreen}

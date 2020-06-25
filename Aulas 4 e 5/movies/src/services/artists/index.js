@@ -5,4 +5,9 @@ export class ArtistsService {
     const response = await API.get('/artists');
     return response.data;
   }
+
+  static async getArtistById(artistId) {
+    const response = await API.get(`/artists_details/${artistId}`);
+    return response.data;
+  }
 }
