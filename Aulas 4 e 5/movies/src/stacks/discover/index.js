@@ -1,7 +1,11 @@
 import React from 'react';
 
 import {createStackNavigator} from '@react-navigation/stack';
-import {DiscoverScreen, MovieDetailsScreen} from '../../screens';
+import {
+  DiscoverScreen,
+  MovieDetailsScreen,
+  ArtistsDetailsScreen,
+} from '../../screens';
 
 const Stack = createStackNavigator();
 
@@ -25,6 +29,11 @@ export const DiscoverStack = () => {
         options={{title: 'Movie name'}}
         component={MovieDetailsScreen}
         name="MovieDetailsScreen"
+      />
+      <Stack.Screen
+        options={{title: 'Artist Name', headerTitleAlign: 'center'}}
+        component={ArtistsDetailsScreen}
+        name="ArtistsDetailsScreen"
       />
     </Stack.Navigator>
   );

@@ -1,0 +1,1692 @@
+{
+  "list": {
+    "pokemons": [
+      {
+        "name": "bulbasaur",
+        "id": "1",
+        "types": ["grass", "poison"],
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png"
+      },
+      {
+        "name": "ivysaur",
+        "id": "2",
+        "types": ["grass", "poison"],
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/002.png"
+      },
+      {
+        "name": "venusaur",
+        "id": "3",
+        "types": ["grass", "poison"],
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/003.png"
+      },
+      {
+        "name": "charmander",
+        "id": "4",
+        "types": ["fire"],
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/004.png"
+      },
+      {
+        "name": "charmeleon",
+        "id": "5",
+        "types": ["fire"],
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/005.png"
+      },
+      {
+        "name": "charizard",
+        "id": "6",
+        "types": ["fire", "flying"],
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/006.png"
+      },
+      {
+        "name": "squirtle",
+        "id": "7",
+        "types": ["water"],
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/007.png"
+      },
+      {
+        "name": "wartortle",
+        "id": "8",
+        "types": ["water"],
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/008.png"
+      },
+      {
+        "name": "blastoise",
+        "id": "9",
+        "types": ["water"],
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/009.png"
+      },
+      {
+        "name": "caterpie",
+        "id": "10",
+        "types": ["bug"],
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/010.png"
+      },
+      {
+        "name": "metapod",
+        "id": "11",
+        "types": ["bug"],
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/011.png"
+      },
+      {
+        "name": "butterfree",
+        "id": "12",
+        "types": ["bug", "flying"],
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/012.png"
+      },
+      {
+        "name": "weedle",
+        "id": "13",
+        "types": ["bug", "poison"],
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/013.png"
+      },
+      {
+        "name": "kakuna",
+        "id": "14",
+        "types": ["bug", "poison"],
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/014.png"
+      },
+      {
+        "name": "beedrill",
+        "id": "15",
+        "types": ["bug", "poison"],
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/015.png"
+      },
+      {
+        "name": "pidgey",
+        "id": "16",
+        "types": ["normal", "flying"],
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/016.png"
+      },
+      {
+        "name": "pidgeotto",
+        "id": "17",
+        "types": ["normal", "flying"],
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/017.png"
+      },
+      {
+        "name": "pidgeot",
+        "id": "18",
+        "types": ["normal", "flying"],
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/018.png"
+      },
+      {
+        "name": "rattata",
+        "id": "19",
+        "types": ["normal"],
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/019.png"
+      },
+      {
+        "name": "raticate",
+        "id": "20",
+        "types": ["normal"],
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/020.png"
+      },
+      {
+        "name": "pikachu",
+        "id": "21",
+        "types": ["electric"],
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/025.png"
+      }
+    ]
+  },
+  "details": [
+    {
+      "name": "bulbasaur",
+      "id": "1",
+      "types": ["grass", "poison"],
+      "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png",
+      "stats": [
+        {
+          "name": "speed",
+          "value": 45
+        },
+        {
+          "name": "special-defense",
+          "value": 65
+        },
+        {
+          "name": "special-attack",
+          "value": 65
+        },
+        {
+          "name": "defense",
+          "value": 49
+        },
+        {
+          "name": "attack",
+          "value": 49
+        },
+        {
+          "name": "hp",
+          "value": 45
+        }
+      ],
+      "description": "A strange seed was planted on its back at birth. The plant sprouts and grows with this pokémon.",
+      "moves": [
+        {
+          "name": "razor-wind",
+          "type": {
+            "name": "normal",
+            "url": "https://pokeapi.co/api/v2/type/1/"
+          },
+          "power": 80
+        },
+        {
+          "name": "swords-dance",
+          "type": {
+            "name": "normal",
+            "url": "https://pokeapi.co/api/v2/type/1/"
+          },
+          "power": null
+        }
+      ],
+      "abilities": [
+        {
+          "name": "chlorophyll",
+          "effect": "This Pokémon's Speed is doubled during strong sunlight.↵↵This bonus does not count as a stat modifier."
+        },
+        {
+          "name": "overgrow",
+          "effect": "When this Pokémon has 1/3 or less of its HP remaining, its grass-type moves inflict 1.5× as much regular damage."
+        }
+      ]
+    },
+    {
+      "name": "ivysaur",
+      "id": "2",
+      "types": ["grass", "poison"],
+      "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/002.png",
+      "stats": [
+        {
+          "name": "speed",
+          "value": 60
+        },
+        {
+          "name": "special-defense",
+          "value": 80
+        },
+        {
+          "name": "special-attack",
+          "value": 80
+        },
+        {
+          "name": "defense",
+          "value": 63
+        },
+        {
+          "name": "attack",
+          "value": 62
+        },
+        {
+          "name": "hp",
+          "value": 60
+        }
+      ],
+      "description": "When the bulb on its back grows large, it appears to lose the ability to stand on its hind legs.",
+      "moves": [
+        {
+          "name": "cut",
+          "type": {
+            "name": "normal",
+            "url": "https://pokeapi.co/api/v2/type/1/"
+          },
+          "power": 50
+        },
+        {
+          "name": "swords-dance",
+          "type": {
+            "name": "normal",
+            "url": "https://pokeapi.co/api/v2/type/1/"
+          },
+          "power": null
+        }
+      ],
+      "abilities": [
+        {
+          "name": "chlorophyll",
+          "effect": "This Pokémon's Speed is doubled during strong sunlight.↵↵This bonus does not count as a stat modifier."
+        },
+        {
+          "name": "overgrow",
+          "effect": "When this Pokémon has 1/3 or less of its HP remaining, its grass-type moves inflict 1.5× as much regular damage."
+        }
+      ]
+    },
+    {
+      "name": "venusaur",
+      "id": "3",
+      "types": ["grass", "poison"],
+      "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/003.png",
+      "stats": [
+        {
+          "name": "speed",
+          "value": 80
+        },
+        {
+          "name": "special-defense",
+          "value": 100
+        },
+        {
+          "name": "special-attack",
+          "value": 100
+        },
+        {
+          "name": "defense",
+          "value": 83
+        },
+        {
+          "name": "attack",
+          "value": 82
+        },
+        {
+          "name": "hp",
+          "value": 80
+        }
+      ],
+      "description": "The plant blooms when it is absorbing solar energy. It stays on the move to seek sunlight.",
+      "moves": [
+        {
+          "name": "swords-dance",
+          "type": {
+            "name": "normal",
+            "url": "https://pokeapi.co/api/v2/type/1/"
+          },
+          "power": null
+        },
+        {
+          "name": "cut",
+          "type": {
+            "name": "normal",
+            "url": "https://pokeapi.co/api/v2/type/1/"
+          },
+          "power": 50
+        }
+      ],
+      "abilities": [
+        {
+          "name": "chlorophyll",
+          "effect": "This Pokémon's Speed is doubled during strong sunlight.↵↵This bonus does not count as a stat modifier."
+        },
+        {
+          "name": "overgrow",
+          "effect": "When this Pokémon has 1/3 or less of its HP remaining, its grass-type moves inflict 1.5× as much regular damage."
+        }
+      ]
+    },
+    {
+      "name": "charmander",
+      "id": "4",
+      "types": ["fire"],
+      "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/004.png",
+      "stats": [
+        {
+          "name": "speed",
+          "value": 65
+        },
+        {
+          "name": "special-defense",
+          "value": 50
+        },
+        {
+          "name": "special-attack",
+          "value": 60
+        },
+        {
+          "name": "defense",
+          "value": 43
+        },
+        {
+          "name": "attack",
+          "value": 52
+        },
+        {
+          "name": "hp",
+          "value": 39
+        }
+      ],
+      "description": "Obviously prefers hot places. When it rains, steam is said to spout from the tip of its tail.",
+      "moves": [
+        {
+          "name": "mega-punch",
+          "type": {
+            "name": "normal",
+            "url": "https://pokeapi.co/api/v2/type/1/"
+          },
+          "power": 80
+        },
+        {
+          "name": "fire-punch",
+          "type": {"name": "fire", "url": "https://pokeapi.co/api/v2/type/10/"},
+          "power": 75
+        }
+      ],
+      "abilities": [
+        {
+          "name": "solar-power",
+          "effect": "During strong sunlight, this Pokémon has 1.5× its Special Attack but takes 1/8 of its maximum HP in damage after each turn."
+        },
+        {
+          "name": "blaze",
+          "effect": "When this Pokémon has 1/3 or less of its HP remaining, its fire-type moves inflict 1.5× as much regular damage."
+        }
+      ]
+    },
+    {
+      "name": "charmeleon",
+      "id": "5",
+      "types": ["fire"],
+      "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/005.png",
+      "stats": [
+        {
+          "name": "speed",
+          "value": 80
+        },
+        {
+          "name": "special-defense",
+          "value": 65
+        },
+        {
+          "name": "special-attack",
+          "value": 80
+        },
+        {
+          "name": "defense",
+          "value": 58
+        },
+        {
+          "name": "attack",
+          "value": 64
+        },
+        {
+          "name": "hp",
+          "value": 58
+        }
+      ],
+      "description": "When it swings its burning tail, it elevates the temperature to unbearably high levels.",
+      "moves": [
+        {
+          "name": "mega-punch",
+          "type": {
+            "name": "normal",
+            "url": "https://pokeapi.co/api/v2/type/1/"
+          },
+          "power": 80
+        },
+        {
+          "name": "fire-punch",
+          "type": {"name": "fire", "url": "https://pokeapi.co/api/v2/type/10/"},
+          "power": 75
+        }
+      ],
+      "abilities": [
+        {
+          "name": "solar-power",
+          "effect": "During strong sunlight, this Pokémon has 1.5× its Special Attack but takes 1/8 of its maximum HP in damage after each turn."
+        },
+        {
+          "name": "blaze",
+          "effect": "When this Pokémon has 1/3 or less of its HP remaining, its fire-type moves inflict 1.5× as much regular damage."
+        }
+      ]
+    },
+    {
+      "name": "charizard",
+      "id": "6",
+      "types": ["fire", "flying"],
+      "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/006.png",
+      "stats": [
+        {
+          "name": "speed",
+          "value": 100
+        },
+        {
+          "name": "special-defense",
+          "value": 85
+        },
+        {
+          "name": "special-attack",
+          "value": 109
+        },
+        {
+          "name": "defense",
+          "value": 78
+        },
+        {
+          "name": "attack",
+          "value": 84
+        },
+        {
+          "name": "hp",
+          "value": 78
+        }
+      ],
+      "description": "Spits fire that is hot enough to melt boulders. Known to cause forest fires unintentionally.",
+      "moves": [
+        {
+          "name": "mega-punch",
+          "type": {
+            "name": "normal",
+            "url": "https://pokeapi.co/api/v2/type/1/"
+          },
+          "power": 80
+        },
+        {
+          "name": "fire-punch",
+          "type": {"name": "fire", "url": "https://pokeapi.co/api/v2/type/10/"},
+          "power": 75
+        }
+      ],
+      "abilities": [
+        {
+          "name": "solar-power",
+          "effect": "During strong sunlight, this Pokémon has 1.5× its Special Attack but takes 1/8 of its maximum HP in damage after each turn."
+        },
+        {
+          "name": "blaze",
+          "effect": "When this Pokémon has 1/3 or less of its HP remaining, its fire-type moves inflict 1.5× as much regular damage."
+        }
+      ]
+    },
+    {
+      "name": "squirtle",
+      "id": "7",
+      "types": ["water"],
+      "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/007.png",
+      "stats": [
+        {
+          "name": "speed",
+          "value": 43
+        },
+        {
+          "name": "special-defense",
+          "value": 64
+        },
+        {
+          "name": "special-attack",
+          "value": 50
+        },
+        {
+          "name": "defense",
+          "value": 65
+        },
+        {
+          "name": "attack",
+          "value": 48
+        },
+        {
+          "name": "hp",
+          "value": 44
+        }
+      ],
+      "description": "After birth, its back swells and hardens into a shell. Powerfully sprays foam from its mouth.",
+      "moves": [
+        {
+          "name": "ice-punch",
+          "type": {"name": "ice", "url": "https://pokeapi.co/api/v2/type/15/"},
+          "power": 75
+        },
+        {
+          "name": "mega-punch",
+          "type": {
+            "name": "normal",
+            "url": "https://pokeapi.co/api/v2/type/1/"
+          },
+          "power": 80
+        }
+      ],
+      "abilities": [
+        {
+          "name": "rain-dish",
+          "effect": "This Pokémon heals for 1/16 of its maximum HP after each turn during rain."
+        },
+        {
+          "name": "torrent",
+          "effect": "When this Pokémon has 1/3 or less of its HP remaining, its water-type moves inflict 1.5× as much regular damage."
+        }
+      ]
+    },
+    {
+      "name": "wartortle",
+      "id": "8",
+      "types": ["water"],
+      "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/008.png",
+      "stats": [
+        {
+          "name": "speed",
+          "value": 58
+        },
+        {
+          "name": "special-defense",
+          "value": 80
+        },
+        {
+          "name": "special-attack",
+          "value": 65
+        },
+        {
+          "name": "defense",
+          "value": 80
+        },
+        {
+          "name": "attack",
+          "value": 63
+        },
+        {
+          "name": "hp",
+          "value": 59
+        }
+      ],
+      "description": "Often hides in water to stalk unwary prey. For swimming fast, it moves its ears to maintain balance.",
+      "moves": [
+        {
+          "name": "mega-punch",
+          "type": {
+            "name": "normal",
+            "url": "https://pokeapi.co/api/v2/type/1/"
+          },
+          "power": 80
+        },
+        {
+          "name": "ice-punch",
+          "type": {"name": "ice", "url": "https://pokeapi.co/api/v2/type/15/"},
+          "power": 75
+        }
+      ],
+      "abilities": [
+        {
+          "name": "rain-dish",
+          "effect": "This Pokémon heals for 1/16 of its maximum HP after each turn during rain."
+        },
+        {
+          "name": "torrent",
+          "effect": "When this Pokémon has 1/3 or less of its HP remaining, its water-type moves inflict 1.5× as much regular damage."
+        }
+      ]
+    },
+    {
+      "name": "blastoise",
+      "id": "9",
+      "types": ["water"],
+      "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/009.png",
+      "stats": [
+        {
+          "name": "speed",
+          "value": 78
+        },
+        {
+          "name": "special-defense",
+          "value": 105
+        },
+        {
+          "name": "special-attack",
+          "value": 85
+        },
+        {
+          "name": "defense",
+          "value": 100
+        },
+        {
+          "name": "attack",
+          "value": 83
+        },
+        {
+          "name": "hp",
+          "value": 79
+        }
+      ],
+      "description": "A brutal pokémon with pressurized water jets on its shell. They are used for high speed tackles.",
+      "moves": [
+        {
+          "name": "ice-punch",
+          "type": {"name": "ice", "url": "https://pokeapi.co/api/v2/type/15/"},
+          "power": 75
+        },
+        {
+          "name": "mega-punch",
+          "type": {
+            "name": "normal",
+            "url": "https://pokeapi.co/api/v2/type/1/"
+          },
+          "power": 80
+        }
+      ],
+      "abilities": [
+        {
+          "name": "rain-dish",
+          "effect": "This Pokémon heals for 1/16 of its maximum HP after each turn during rain."
+        },
+        {
+          "name": "torrent",
+          "effect": "When this Pokémon has 1/3 or less of its HP remaining, its water-type moves inflict 1.5× as much regular damage."
+        }
+      ]
+    },
+    {
+      "name": "caterpie",
+      "id": "10",
+      "types": ["bug"],
+      "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/010.png",
+      "stats": [
+        {
+          "name": "speed",
+          "value": 45
+        },
+        {
+          "name": "special-defense",
+          "value": 20
+        },
+        {
+          "name": "special-attack",
+          "value": 20
+        },
+        {
+          "name": "defense",
+          "value": 35
+        },
+        {
+          "name": "attack",
+          "value": 30
+        },
+        {
+          "name": "hp",
+          "value": 45
+        }
+      ],
+      "description": "Its short feet are tipped with suction pads that enable it to tirelessly climb slopes and walls.",
+      "moves": [
+        {
+          "name": "tackle",
+          "type": {
+            "name": "normal",
+            "url": "https://pokeapi.co/api/v2/type/1/"
+          },
+          "power": 40
+        },
+        {
+          "name": "string-shot",
+          "type": {"name": "bug", "url": "https://pokeapi.co/api/v2/type/7/"},
+          "power": null
+        }
+      ],
+      "abilities": [
+        {
+          "name": "run-away",
+          "effect": "This Pokémon is always successful fleeing from wild battles, even if trapped by a move or ability."
+        },
+        {
+          "name": "shield-dust",
+          "effect": "This Pokémon is immune to the extra effects of moves used against it.An extra effect is a move's chance, listed as an effect chance, to inflict a status ailment, cause a stat change, or make the target flinch in addition to the move's main effect.  For example, thunder shock's paralysis is an extra effect, but thunder wave's is not, nor are knock off's item removal and air cutter's increased critical hit rate."
+        }
+      ]
+    },
+    {
+      "name": "metapod",
+      "id": "11",
+      "types": ["bug"],
+      "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/011.png",
+      "stats": [
+        {
+          "name": "speed",
+          "value": 30
+        },
+        {
+          "name": "special-defense",
+          "value": 25
+        },
+        {
+          "name": "special-attack",
+          "value": 25
+        },
+        {
+          "name": "defense",
+          "value": 55
+        },
+        {
+          "name": "attack",
+          "value": 20
+        },
+        {
+          "name": "hp",
+          "value": 50
+        }
+      ],
+      "description": "This pokémon is vulnerable to attack while its shell is soft, exposing its weak and tender body.",
+      "moves": [
+        {
+          "name": "harden",
+          "type": {
+            "name": "normal",
+            "url": "https://pokeapi.co/api/v2/type/1/"
+          },
+          "power": null
+        },
+        {
+          "name": "string-shot",
+          "type": {"name": "bug", "url": "https://pokeapi.co/api/v2/type/7/"},
+          "power": null
+        }
+      ],
+      "abilities": [
+        {
+          "name": "shed-skin",
+          "effect": "After each turn, this Pokémon has a 33% of being cured of any major status ailment."
+        }
+      ]
+    },
+    {
+      "name": "butterfree",
+      "id": "12",
+      "types": ["bug", "flying"],
+      "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/012.png",
+      "stats": [
+        {
+          "name": "speed",
+          "value": 70
+        },
+        {
+          "name": "special-defense",
+          "value": 80
+        },
+        {
+          "name": "special-attack",
+          "value": 90
+        },
+        {
+          "name": "defense",
+          "value": 50
+        },
+        {
+          "name": "attack",
+          "value": 45
+        },
+        {
+          "name": "hp",
+          "value": 60
+        }
+      ],
+      "description": "In battle, it flaps its wings at high speed to release highly toxic dust into the air.",
+      "moves": [
+        {
+          "name": "razor-wind",
+          "type": {
+            "name": "normal",
+            "url": "https://pokeapi.co/api/v2/type/1/"
+          },
+          "power": 80
+        },
+        {
+          "name": "gust",
+          "type": {
+            "name": "flying",
+            "url": "https://pokeapi.co/api/v2/type/3/"
+          },
+          "power": 40
+        }
+      ],
+      "abilities": [
+        {
+          "name": "compound Eyes",
+          "effect": "If a Pokémon with Compound Eyes is first in the party, Pokémon that can be holding items have that chance increase from 50% to 60%."
+        }
+      ]
+    },
+    {
+      "name": "weedle",
+      "id": "13",
+      "types": ["bug", "poison"],
+      "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/013.png",
+      "stats": [
+        {
+          "name": "speed",
+          "value": 50
+        },
+        {
+          "name": "special-defense",
+          "value": 20
+        },
+        {
+          "name": "special-attack",
+          "value": 20
+        },
+        {
+          "name": "defense",
+          "value": 30
+        },
+        {
+          "name": "attack",
+          "value": 35
+        },
+        {
+          "name": "hp",
+          "value": 40
+        }
+      ],
+      "description": "Often found in forests, eating leaves. It has a sharp venomous stinger on its head.",
+      "moves": [
+        {
+          "name": "poison-sting",
+          "type": {
+            "name": "poison",
+            "url": "https://pokeapi.co/api/v2/type/4/"
+          },
+          "power": 15
+        },
+        {
+          "name": "string-shot",
+          "type": {"name": "bug", "url": "https://pokeapi.co/api/v2/type/7/"},
+          "power": null
+        }
+      ],
+      "abilities": [
+        {
+          "name": "run-away",
+          "effect": "This Pokémon is always successful fleeing from wild battles, even if trapped by a move or ability."
+        },
+        {
+          "name": "shield-dust",
+          "effect": "This Pokémon is immune to the extra effects of moves used against it.An extra effect is a move's chance, listed as an effect chance, to inflict a status ailment, cause a stat change, or make the target flinch in addition to the move's main effect.  For example, thunder shock's paralysis is an extra effect, but thunder wave's is not, nor are knock off's item removal and air cutter's increased critical hit rate."
+        }
+      ]
+    },
+    {
+      "name": "kakuna",
+      "id": "14",
+      "types": ["bug", "poison"],
+      "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/014.png",
+      "stats": [
+        {
+          "name": "speed",
+          "value": 35
+        },
+        {
+          "name": "special-defense",
+          "value": 25
+        },
+        {
+          "name": "special-attack",
+          "value": 25
+        },
+        {
+          "name": "defense",
+          "value": 50
+        },
+        {
+          "name": "attack",
+          "value": 25
+        },
+        {
+          "name": "hp",
+          "value": 45
+        }
+      ],
+      "description": "Almost incapable of moving, this pokémon can only harden its shell to protect itself from predators.",
+      "moves": [
+        {
+          "name": "harden",
+          "type": {
+            "name": "normal",
+            "url": "https://pokeapi.co/api/v2/type/1/"
+          },
+          "power": null
+        },
+        {
+          "name": "string-shot",
+          "type": {"name": "bug", "url": "https://pokeapi.co/api/v2/type/7/"},
+          "power": null
+        }
+      ],
+      "abilities": [
+        {
+          "name": "shed-skin",
+          "effect": "After each turn, this Pokémon has a 33% of being cured of any major status ailment."
+        }
+      ]
+    },
+    {
+      "name": "beedrill",
+      "id": "15",
+      "types": ["bug", "poison"],
+      "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/015.png",
+      "stats": [
+        {
+          "name": "speed",
+          "value": 75
+        },
+        {
+          "name": "special-defense",
+          "value": 80
+        },
+        {
+          "name": "special-attack",
+          "value": 45
+        },
+        {
+          "name": "defense",
+          "value": 40
+        },
+        {
+          "name": "attack",
+          "value": 90
+        },
+        {
+          "name": "hp",
+          "value": 65
+        }
+      ],
+      "description": "Flies at high speed and attacks using its large venomous stingers on its forelegs and tail.",
+      "moves": [
+        {
+          "name": "swords-dance",
+          "type": {
+            "name": "normal",
+            "url": "https://pokeapi.co/api/v2/type/1/"
+          },
+          "power": null
+        },
+        {
+          "name": "cut",
+          "type": {
+            "name": "normal",
+            "url": "https://pokeapi.co/api/v2/type/1/"
+          },
+          "power": 50
+        }
+      ],
+      "abilities": [
+        {
+          "name": "sniper",
+          "effect": "This Pokémon inflicts triple damage with critical hits, rather than the usual double damage."
+        },
+        {
+          "name": "swarm",
+          "effect": "When this Pokémon has 1/3 or less of its HP remaining, its bug-type moves inflict 1.5× as much regular damage.Overworld: If the lead Pokémon has this ability, the wild encounter rate is increased."
+        }
+      ]
+    },
+    {
+      "name": "pidgey",
+      "id": "16",
+      "types": ["normal", "flying"],
+      "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/016.png",
+      "stats": [
+        {
+          "name": "speed",
+          "value": 56
+        },
+        {
+          "name": "special-defense",
+          "value": 35
+        },
+        {
+          "name": "special-attack",
+          "value": 35
+        },
+        {
+          "name": "defense",
+          "value": 40
+        },
+        {
+          "name": "attack",
+          "value": 45
+        },
+        {
+          "name": "hp",
+          "value": 40
+        }
+      ],
+      "description": "A common sight in forests and woods. It flaps its wings at ground level to kick up blinding sand.",
+      "moves": [
+        {
+          "name": "razor-wind",
+          "type": {
+            "name": "normal",
+            "url": "https://pokeapi.co/api/v2/type/1/"
+          },
+          "power": 80
+        },
+        {
+          "name": "gust",
+          "type": {
+            "name": "flying",
+            "url": "https://pokeapi.co/api/v2/type/3/"
+          },
+          "power": 40
+        }
+      ],
+      "abilities": [
+        {
+          "name": "big-pecks",
+          "effect": "This Pokémon's Defense cannot be lowered by other Pokémon.↵↵This Pokémon can still be passed negative Defense modifiers through heart swap or guard swap."
+        },
+        {
+          "name": "tangled-feet",
+          "effect": "When this Pokémon is confused, it has twice its evasion."
+        }
+      ]
+    },
+    {
+      "name": "pidgeotto",
+      "id": "17",
+      "types": ["normal", "flying"],
+      "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/017.png",
+      "stats": [
+        {
+          "name": "speed",
+          "value": 71
+        },
+        {
+          "name": "special-defense",
+          "value": 50
+        },
+        {
+          "name": "special-attack",
+          "value": 50
+        },
+        {
+          "name": "defense",
+          "value": 55
+        },
+        {
+          "name": "attack",
+          "value": 60
+        },
+        {
+          "name": "hp",
+          "value": 63
+        }
+      ],
+      "description": "Very protective of its sprawling territorial area, this pokémon will fiercely peck at any intruder.",
+      "moves": [
+        {
+          "name": "razor-wind",
+          "type": {
+            "name": "normal",
+            "url": "https://pokeapi.co/api/v2/type/1/"
+          },
+          "power": 80
+        },
+        {
+          "name": "gust",
+          "type": {
+            "name": "flying",
+            "url": "https://pokeapi.co/api/v2/type/3/"
+          },
+          "power": 40
+        }
+      ],
+      "abilities": [
+        {
+          "name": "big-pecks",
+          "effect": "This Pokémon's Defense cannot be lowered by other Pokémon.This Pokémon can still be passed negative Defense modifiers through heart swap or guard swap."
+        },
+        {
+          "name": "tangled-feet",
+          "effect": "When this Pokémon is confused, it has twice its evasion."
+        }
+      ]
+    },
+    {
+      "name": "pidgeot",
+      "id": "18",
+      "types": ["normal", "flying"],
+      "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/018.png",
+      "stats": [
+        {
+          "name": "speed",
+          "value": 101
+        },
+        {
+          "name": "special-defense",
+          "value": 70
+        },
+        {
+          "name": "special-attack",
+          "value": 70
+        },
+        {
+          "name": "defense",
+          "value": 75
+        },
+        {
+          "name": "attack",
+          "value": 80
+        },
+        {
+          "name": "hp",
+          "value": 83
+        }
+      ],
+      "description": "When hunting, it skims the surface of water at high speed to pick off unwary prey such as MAGIKARP.",
+      "moves": [
+        {
+          "name": "razor-wind",
+          "type": {
+            "name": "normal",
+            "url": "https://pokeapi.co/api/v2/type/1/"
+          },
+          "power": 80
+        },
+        {
+          "name": "gust",
+          "type": {
+            "name": "flying",
+            "url": "https://pokeapi.co/api/v2/type/3/"
+          },
+          "power": 40
+        }
+      ],
+      "abilities": [
+        {
+          "name": "big-pecks",
+          "effect": "This Pokémon's Defense cannot be lowered by other Pokémon.This Pokémon can still be passed negative Defense modifiers through heart swap or guard swap."
+        },
+        {
+          "name": "tangled-feet",
+          "effect": "When this Pokémon is confused, it has twice its evasion."
+        }
+      ]
+    },
+    {
+      "name": "rattata",
+      "id": "19",
+      "types": ["normal"],
+      "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/019.png",
+      "stats": [
+        {
+          "name": "speed",
+          "value": 72
+        },
+        {
+          "name": "special-defense",
+          "value": 35
+        },
+        {
+          "name": "special-attack",
+          "value": 25
+        },
+        {
+          "name": "defense",
+          "value": 35
+        },
+        {
+          "name": "attack",
+          "value": 56
+        },
+        {
+          "name": "hp",
+          "value": 30
+        }
+      ],
+      "description": "Bites anything when it attacks. Small and very quick, it is a common sight in many places.",
+      "moves": [
+        {
+          "name": "cut",
+          "type": {
+            "name": "normal",
+            "url": "https://pokeapi.co/api/v2/type/1/"
+          },
+          "power": 50
+        },
+        {
+          "name": "headbutt",
+          "type": {
+            "name": "normal",
+            "url": "https://pokeapi.co/api/v2/type/1/"
+          },
+          "power": 70
+        }
+      ],
+      "abilities": [
+        {
+          "name": "hustle",
+          "effect": "This Pokémon's physical moves do 1.5× as much regular damage, but have 0.8× their usual accuracy.Special moves are unaffected.  Moves that do set damage, such as seismic toss, have their accuracy affected, but not their damage.Overworld: If the lead Pokémon has this ability, higher-levelled Pokémon have their encounter rate increased."
+        },
+        {
+          "name": "guts",
+          "effect": "Whenever this Pokémon is asleep, burned, paralyzed, or poisoned, it has 1.5× its Attack.  This Pokémon is not affected by the usual Attack cut from a burn.This bonus does not count as a stat modifier."
+        }
+      ]
+    },
+    {
+      "name": "raticate",
+      "id": "20",
+      "types": ["normal"],
+      "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/020.png",
+      "stats": [
+        {
+          "name": "speed",
+          "value": 97
+        },
+        {
+          "name": "special-defense",
+          "value": 70
+        },
+        {
+          "name": "special-attack",
+          "value": 50
+        },
+        {
+          "name": "defense",
+          "value": 60
+        },
+        {
+          "name": "attack",
+          "value": 81
+        },
+        {
+          "name": "hp",
+          "value": 55
+        }
+      ],
+      "description": "It uses its whis­ kers to maintain its balance. It apparently slows down if they are cut off.",
+      "moves": [
+        {
+          "name": "swords-dance",
+          "type": {
+            "name": "normal",
+            "url": "https://pokeapi.co/api/v2/type/1/"
+          },
+          "power": null
+        },
+        {
+          "name": "cut",
+          "type": {
+            "name": "normal",
+            "url": "https://pokeapi.co/api/v2/type/1/"
+          },
+          "power": 50
+        }
+      ],
+      "abilities": [
+        {
+          "name": "hustle",
+          "effect": "This Pokémon's physical moves do 1.5× as much regular damage, but have 0.8× their usual accuracy.Special moves are unaffected.  Moves that do set damage, such as seismic toss, have their accuracy affected, but not their damage.Overworld: If the lead Pokémon has this ability, higher-levelled Pokémon have their encounter rate increased."
+        },
+        {
+          "name": "guts",
+          "effect": "Whenever this Pokémon is asleep, burned, paralyzed, or poisoned, it has 1.5× its Attack.  This Pokémon is not affected by the usual Attack cut from a burn.This bonus does not count as a stat modifier."
+        }
+      ]
+    },
+    {
+      "name": "pikachu",
+      "id": "21",
+      "types": ["electric"],
+      "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/025.png",
+      "stats": [
+        {
+          "value": 90,
+          "name": "speed"
+        },
+        {
+          "value": 50,
+          "name": "special-defense"
+        },
+        {
+          "value": 50,
+          "name": "special-attack"
+        },
+        {
+          "value": 40,
+          "name": "defense"
+        },
+        {
+          "value": 55,
+          "name": "attack"
+        },
+        {
+          "value": 35,
+          "name": "hp"
+        }
+      ],
+      "description": "Its nature is to store up electricity. Forests where nests of Pikachu live are dangerous, since the trees are so often struck by lightning.",
+      "moves": [
+        {
+          "name": "mega-punch",
+          "type": {
+            "name": "normal",
+            "url": "https://pokeapi.co/api/v2/type/1/"
+          },
+          "power": 80
+        },
+        {
+          "name": "pay-day",
+          "type": {
+            "name": "normal",
+            "url": "https://pokeapi.co/api/v2/type/1/"
+          },
+          "power": 40
+        }
+      ],
+      "abilities": [
+        {
+          "name": "lightning-rod",
+          "effect": "Does not affect non-damaging electric moves, i.e. thunder wave.  Increases the frequency of Match Call calls on the overworld if any party Pokémon has this ability."
+        },
+        {
+          "name": "static",
+          "effect": "Whenever a move makes contact with this Pokémon, the move's user has a 30% chance of being paralyzed. Pokémon that are immune to electric-type moves can still be paralyzed by this ability. Overworld: If the lead Pokémon has this ability, there is a 50% chance that encounters will be with an electric Pokémon, if applicable."
+        }
+      ]
+    }
+  ],
+  "moves": [
+    {
+      "name": "tackle",
+      "learnLevel": 1,
+      "type": "normal",
+      "id": 1
+    },
+    {
+      "name": "growl",
+      "learnLevel": 1,
+      "type": "normal",
+      "id": 2
+    },
+    {
+      "name": "leech-seed",
+      "learnLevel": 7,
+      "type": "grass",
+      "id": 3
+    },
+    {
+      "name": "vine-whip",
+      "learnLevel": 13,
+      "type": "grass",
+      "id": 9
+    },
+    {
+      "name": "poison-powder",
+      "learnLevel": 20,
+      "type": "poison",
+      "id": 4
+    },
+    {
+      "name": "razor-leaf",
+      "learnLevel": 27,
+      "type": "grass",
+      "id": 5
+    },
+    {
+      "name": "growth",
+      "learnLevel": 34,
+      "type": "normal",
+      "id": 6
+    },
+    {
+      "name": "sleep-powder",
+      "learnLevel": 41,
+      "type": "grass",
+      "id": 7
+    },
+    {
+      "name": "solar-beam",
+      "learnLevel": 48,
+      "type": "grass",
+      "id": 8
+    }
+  ],
+  "movesDetails": [
+    {
+      "id": 1,
+      "name": "tackle",
+      "power": 40,
+      "pp": 35,
+      "accuracy": 100,
+      "type": {
+        "name": "normal",
+        "url": "https://pokeapi.co/api/v2/type/1/"
+      },
+      "effect": "Inflicts regular damage.",
+      "short_effect": "Inflicts regular damage with no additional effect."
+    },
+    {
+      "id": 2,
+      "accuracy": 100,
+      "name": "growl",
+      "power": null,
+      "pp": 40,
+      "type": {
+        "name": "normal",
+        "url": "https://pokeapi.co/api/v2/type/1/"
+      },
+      "effect": "Lowers the target's Attack by one stage.",
+      "short_effect": "Lowers the target's Attack by one stage."
+    },
+    {
+      "id": 3,
+      "accuracy": 90,
+      "effect": "Plants a seed on the target that drains 1/8 of its max HP at the end of every turn and heals the user for the amount taken.  Has no effect on grass Pokémon.  The seed remains until the target leaves the field.\nThe user takes damage instead of being healed if the target has liquid ooze.\nrapid spin will remove this effect.\nThis effect is passed on by baton pass.",
+      "short_effect": "Seeds the target, stealing HP from it every turn.",
+      "name": "leech-seed",
+      "power": null,
+      "pp": 10,
+      "type": {
+        "name": "grass",
+        "url": "https://pokeapi.co/api/v2/type/12/"
+      }
+    },
+    {
+      "id": 9,
+      "accuracy": 100,
+      "effect": "Inflicts regular damage.",
+      "short_effect": "Inflicts regular damage with no additional effect.",
+      "name": "vine-whip",
+      "power": 45,
+      "pp": 25,
+      "type": {
+        "name": "grass",
+        "url": "https://pokeapi.co/api/v2/type/12/"
+      }
+    },
+    {
+      "id": 4,
+      "accuracy": 75,
+      "effect": "Poisons the target.",
+      "short_effect": "Poisons the target.",
+      "name": "poison-powder",
+      "pp": 35,
+      "priority": 0,
+      "type": {
+        "name": "poison",
+        "url": "https://pokeapi.co/api/v2/type/4/"
+      }
+    },
+    {
+      "id": 5,
+      "accuracy": 95,
+      "effect": "Inflicts regular damage.  User's critical hit rate is one level higher when using this move.",
+      "short_effect": "Has an increased chance for a critical hit.",
+      "name": "razor-leaf",
+      "power": 55,
+      "pp": 25,
+      "type": {
+        "name": "grass",
+        "url": "https://pokeapi.co/api/v2/type/12/"
+      }
+    },
+    {
+      "id": 6,
+      "accuracy": null,
+      "effect": "Raises the user's Attack and Special Attack by one stage each.  During sunny day, raises both stats by two stages.",
+      "short_effect": "Raises the user's Attack and Special Attack by one stage.",
+      "name": "growth",
+      "power": null,
+      "pp": 20,
+      "type": {
+        "name": "normal",
+        "url": "https://pokeapi.co/api/v2/type/1/"
+      }
+    },
+    {
+      "id": 7,
+      "accuracy": 75,
+      "effect": "Puts the target to sleep.",
+      "short_effect": "Puts the target to sleep.",
+      "name": "sleep-powder",
+      "power": null,
+      "pp": 15,
+      "type": {
+        "name": "grass",
+        "url": "https://pokeapi.co/api/v2/type/12/"
+      }
+    },
+    {
+      "id": 8,
+      "accuracy": 100,
+      "effect": "Inflicts regular damage.  User charges for one turn before attacking.\nDuring sunny day, the charge turn is skipped.\nDuring hail, rain dance, or sandstorm, power is halved.\nThis move cannot be selected by sleep talk.",
+      "short_effect": "Requires a turn to charge before attacking.",
+      "name": "solar-beam",
+      "power": 120,
+      "pp": 10,
+      "type": {
+        "name": "grass",
+        "url": "https://pokeapi.co/api/v2/type/12/"
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "name": "master-ball",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/master-ball.png",
+      "cost": 0
+    },
+    {
+      "id": 2,
+      "name": "ultra-ball",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/ultra-ball.png",
+      "cost": 800
+    },
+    {
+      "id": 3,
+      "name": "great-ball",
+      "cost": 600,
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/great-ball.png"
+    },
+    {
+      "id": 4,
+      "name": "poke-ball",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/poke-ball.png",
+      "cost": 200
+    },
+    {
+      "id": 5,
+      "name": "safari-ball",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/safari-ball.png",
+      "cost": 0
+    },
+    {
+      "id": 6,
+      "name": "net-ball",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/net-ball.png",
+      "cost": 1000
+    },
+    {
+      "id": 7,
+      "name": "dive-ball",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/dive-ball.png",
+      "cost": 1000
+    },
+    {
+      "id": 8,
+      "name": "nest-ball",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/nest-ball.png",
+      "cost": 1000
+    },
+    {
+      "id": 9,
+      "name": "repeat-ball",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/repeat-ball.png",
+      "cost": 1000
+    },
+    {
+      "id": 10,
+      "name": "timer-ball",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/timer-ball.png",
+      "cost": 1000
+    }
+  ],
+  "itemsDetails": [
+    {
+      "id": 1,
+      "name": "master-ball",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/master-ball.png",
+      "cost": 0,
+      "effect": "Used in battle:   Catches a wild Pokémon without fail.    If used in a trainer battle, nothing happens and the ball is lost.",
+      "short_effect": "Catches a wild Pokémon every time."
+    },
+    {
+      "id": 2,
+      "name": "ultra-ball",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/ultra-ball.png",
+      "cost": 800,
+      "effect": "Used in battle:   Attempts to catch a wild Pokémon, using a catch rate of 2×.    If used in a trainer battle, nothing happens and the ball is lost.",
+      "short_effect": "Tries to catch a wild Pokémon.  Success rate is 2×."
+    },
+    {
+      "id": 3,
+      "name": "great-ball",
+      "cost": 600,
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/great-ball.png",
+      "effect": "Used in battle:   Attempts to catch a wild Pokémon, using a catch rate of 1.5×.    If used in a trainer battle, nothing happens and the ball is lost.",
+      "short_effect": "Tries to catch a wild Pokémon.  Success rate is 1.5×."
+    },
+    {
+      "id": 4,
+      "name": "poke-ball",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/poke-ball.png",
+      "cost": 200,
+      "effect": "Used in battle:   Attempts to catch a wild Pokémon, using a catch rate of 1×.    If used in a trainer battle, nothing happens and the ball is lost.",
+      "short_effect": "Tries to catch a wild Pokémon."
+    },
+    {
+      "id": 5,
+      "name": "safari-ball",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/safari-ball.png",
+      "cost": 0,
+      "effect": "Used in battle:   Attempts to catch a wild Pokémon, using a catch rate of 1.5×.\nThis item can only be used in the great marsh or kanto safari zone.",
+      "short_effect": "Tries to catch a wild Pokémon in the Great Marsh or Safari Zone.  Success rate is 1.5×."
+    },
+    {
+      "id": 6,
+      "name": "net-ball",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/net-ball.png",
+      "cost": 1000,
+      "effect": "Used in battle:   Attempts to catch a wild Pokémon.  If the wild Pokémon is water- or bug-type, this ball has a catch rate of 3×.  Otherwise, it has a catch rate of 1×.    If used in a trainer battle, nothing happens and the ball is lost.",
+      "short_effect": "Tries to catch a wild Pokémon.  Success rate is 3× for water and bug Pokémon."
+    },
+    {
+      "id": 7,
+      "name": "dive-ball",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/dive-ball.png",
+      "cost": 1000,
+      "effect": "Used in battle:   Attempts to catch a wild Pokémon.  If the wild Pokémon was encountered by surfing or fishing, this ball has a catch rate of 3.5×.  Otherwise, it has a catch rate of 1×.    If used in a trainer battle, nothing happens and the ball is lost.",
+      "short_effect": "Tries to catch a wild Pokémon. Success rate is 3.5× when underwater, fishing, or surfing."
+    },
+    {
+      "id": 8,
+      "name": "nest-ball",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/nest-ball.png",
+      "cost": 1000,
+      "effect": "Used in battle:   Attempts to catch a wild Pokémon.  Has a catch rate of given by `(40 - level) / 10`, where `level` is the wild Pokémon's level, to a maximum of 3.9× for level 1 Pokémon.  If the wild Pokémon's level is higher than 30, this ball has a catch rate of 1×.    If used in a trainer battle, nothing happens and the ball is lost.",
+      "short_effect": "Tries to catch a wild Pokémon.  Success rate is 3.9× for level 1 Pokémon, and drops steadily to 1× at level 30."
+    },
+    {
+      "id": 9,
+      "name": "repeat-ball",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/repeat-ball.png",
+      "cost": 1000,
+      "effect": "Used in battle:   Attempts to catch a wild Pokémon.  If the wild Pokémon's species is marked as caught in the trainer's Pokédex, this ball has a catch rate of 3×.  Otherwise, it has a catch rate of 1×.    If used in a trainer battle, nothing happens and the ball is lost.",
+      "short_effect": "Tries to catch a wild Pokémon.  Success rate is 3× for previously-caught Pokémon."
+    },
+    {
+      "id": 10,
+      "name": "timer-ball",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/timer-ball.png",
+      "cost": 1000,
+      "effect": "Used in battle:   Attempts to catch a wild Pokémon.  Has a catch rate of 1.1× on the first turn of the battle and increases by 0.1× every turn, to a maximum of 4× on turn 30.    If used in a trainer battle, nothing happens and the ball is lost.",
+      "short_effect": "Tries to catch a wild Pokémon. Success rate increases by 0.1× (Gen V: 0.3×) every turn, to a max of 4×."
+    }
+  ]
+}
