@@ -22,14 +22,14 @@ const PokemonRow = ({pokemon, onPressPokemon}) => {
     return `#${id}`;
   };
 
-  const renderTypeIcons = () => types.map(type => <TypeIcon type={type} />);
+  const renderTypeIcons = () =>
+    types.map((type, index) => <TypeIcon key={index + 1} type={type} />);
 
   return (
     <TouchableHighlight
       onPress={() => onPressPokemon(id)}
       style={styles.container}
-      underlayColor={POKEMON_TYPES[types[0].toUpperCase()].color}
-      activeOpacity={0.5}>
+      underlayColor={POKEMON_TYPES[types[0].toUpperCase()].color}>
       <>
         <View style={styles.pokemonContent}>
           <View style={styles.imageContainer}>

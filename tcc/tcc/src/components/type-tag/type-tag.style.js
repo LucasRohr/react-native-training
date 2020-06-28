@@ -5,11 +5,10 @@ export default StyleSheet.create({
   container: {
     flexDirection: 'row',
     height: 35,
-    width: 110,
-    justifyContent: 'space-between',
-    paddingVertical: 6,
-    paddingHorizontal: 15,
+    justifyContent: 'flex-start',
     alignItems: 'center',
+    paddingVertical: 6,
+    paddingHorizontal: 16,
     shadowOffset: {
       width: 10,
       height: 8,
@@ -22,10 +21,11 @@ export default StyleSheet.create({
   },
 
   type: {
-    fontSize: 13,
+    fontSize: 12,
     lineHeight: 14,
     textTransform: 'uppercase',
     color: COLORS.WHITE,
     fontWeight: 'bold',
+    marginLeft: 15,
   },
 });

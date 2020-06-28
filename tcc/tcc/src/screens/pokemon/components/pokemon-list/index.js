@@ -7,8 +7,12 @@ const PokemonList = ({pokemonList, onPressPokemon}) => (
   <FlatList
     data={pokemonList}
     keyExtractor={item => `key - ${item.id}`}
-    renderItem={({item}) => (
-      <PokemonRow pokemon={item} onPressPokemon={onPressPokemon} />
+    renderItem={({item, index}) => (
+      <PokemonRow
+        key={index + 1}
+        pokemon={item}
+        onPressPokemon={onPressPokemon}
+      />
     )}
   />
 );

@@ -8,6 +8,12 @@ import {PokemonStack, MovesStack, ItemsStack} from './stacks';
 
 const BottomTab = createBottomTabNavigator();
 
+const hiddenTabScreens = [
+  'PokemonDetailsScreen',
+  'MoveDetailsScreen',
+  'ItemDetailsScreen',
+];
+
 const App = () => {
   const renderIcon = ({focused, name}) => (
     <CustomIcon
@@ -16,6 +22,18 @@ const App = () => {
       color={focused ? COLORS.BLACK : COLORS.GRAY}
     />
   );
+
+  const getTabBarVisibility = route => {
+    const routeName = route.state
+      ? route.state.routes[route.state.index].name
+      : '';
+
+    if (hiddenTabScreens.includes(routeName)) {
+      return false;
+    }
+
+    return true;
+  };
 
   return (
     <NavigationContainer>
@@ -39,28 +57,31 @@ const App = () => {
           },
         }}>
         <BottomTab.Screen
-          options={{
+          options={({route}) => ({
             title: 'Pokemon',
             tabBarIcon: ({focused}) => renderIcon({focused, name: 'pokemon'}),
-          }}
+            tabBarVisible: getTabBarVisibility(route),
+          })}
           component={PokemonStack}
           name="PokemonStack"
         />
 
         <BottomTab.Screen
-          options={{
+          options={({route}) => ({
             title: 'Moves',
             tabBarIcon: ({focused}) => renderIcon({focused, name: 'moves'}),
-          }}
+            tabBarVisible: getTabBarVisibility(route),
+          })}
           component={MovesStack}
           name="MovesStack"
         />
 
         <BottomTab.Screen
-          options={{
+          options={({route}) => ({
             title: 'Items',
             tabBarIcon: ({focused}) => renderIcon({focused, name: 'itens'}),
-          }}
+            tabBarVisible: getTabBarVisibility(route),
+          })}
           component={ItemsStack}
           name="ItemsStack"
         />

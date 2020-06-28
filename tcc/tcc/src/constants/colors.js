@@ -6,6 +6,9 @@ const COLORS = {
   DARK_GRAY: '#4F4F4F',
   TAB: '#D8F6DB',
   TAB_STRONG: '#51E85E',
+  LIGHT_GREEN: '#84E090',
+  OCEAN_GREEN: '#75DEDD',
+  TRANSPARENT: 'transparent',
 
   BUG: '#9DC130',
   DARK: '#5F606D',

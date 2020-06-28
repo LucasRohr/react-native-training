@@ -1,8 +1,6 @@
 import {StyleSheet, Dimensions} from 'react-native';
 import {COLORS} from '../../constants';
 
-const {width} = Dimensions.get('window');
-
 export default StyleSheet.create({
   container: {
     flex: 1,
@@ -14,7 +12,7 @@ export default StyleSheet.create({
   content: {
     width: '100%',
     height: '75%',
-    justifyContent: 'space-between',
+    justifyContent: 'flex-start',
     alignItems: 'center',
     borderTopLeftRadius: 50,
     borderTopRightRadius: 50,
@@ -47,6 +45,7 @@ export default StyleSheet.create({
   nameTypeContainer: {
     justifyContent: 'space-between',
     alignItems: 'center',
+    marginBottom: 35,
   },
 
   name: {
@@ -70,5 +69,13 @@ export default StyleSheet.create({
     lineHeight: 18,
     color: COLORS.DARK_GRAY,
     textAlign: 'center',
+    marginBottom: 30,
+  },
+
+  gradient: {
+    width: '100%',
+    height: '100%',
+    justifyContent: 'space-between',
+    alignItems: 'center',
   },
 });
