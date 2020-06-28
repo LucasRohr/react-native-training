@@ -1,5 +1,7 @@
-import {StyleSheet} from 'react-native';
+import {StyleSheet, Dimensions} from 'react-native';
 import {COLORS} from '../../../../constants';
+
+const {width} = Dimensions.get('window');
 
 export default StyleSheet.create({
   container: {
@@ -7,11 +9,11 @@ export default StyleSheet.create({
     height: 180,
     justifyContent: 'space-between',
     alignItems: 'center',
-    paddingHorizontal: 10,
+    paddingHorizontal: 5,
   },
 
   moveContainer: {
-    width: '100%',
+    width: width - 50,
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',

@@ -8,7 +8,7 @@ const CustomIcon = ({name, size, color, onPress, ...props}) => {
   const Icon = createIconSetFromIcoMoon(icoMoonConfig);
 
   return (
-    <Icon name={name} size={size} color={color} {...props} onPress={onPress} />
+    <Icon name={name} size={size} color={color} onPress={onPress} {...props} />
   );
 };
 

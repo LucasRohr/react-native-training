@@ -30,12 +30,17 @@ export default StyleSheet.create({
     padding: 10,
   },
 
-  image: {
+  imageContainer: {
     width: 120,
     height: 120,
     position: 'absolute',
-    top: -60,
-    left: '40%',
+    top: 60,
+    left: '36%',
+    elevation: 0.1,
+  },
+
+  image: {
+    flex: 1,
   },
 
   name: {
@@ -70,9 +75,13 @@ export default StyleSheet.create({
   },
 
   cost: {
-    fontSize: 22,
-    lineHeight: 18,
+    fontSize: 23,
+    lineHeight: 23,
     fontWeight: '600',
     color: COLORS.GRAY,
+  },
+
+  coinIcon: {
+    lineHeight: 22,
   },
 });

@@ -38,14 +38,21 @@ const ItemDetailsScreen = ({navigation, route}) => {
           <BackButton navigation={navigation} />
         </View>
 
-        <View style={styles.content}>
+        <View style={styles.imageContainer}>
           <Image style={styles.image} source={{uri: item.image}} />
+        </View>
 
+        <View style={styles.content}>
           <Text style={styles.name}>{item.name.replace('-', ' ')}</Text>
 
           <View style={styles.itemCostContainer}>
             <Text style={styles.cost}> {item.cost} </Text>
-            <CustomIcon name="coin" size={20} color={COLORS.GRAY} />
+            <CustomIcon
+              style={styles.coinIcon}
+              name="coin"
+              size={20}
+              color={COLORS.GRAY}
+            />
           </View>
 
           <Text style={styles.effect}>{item.effect.replace('.', '.\n')}</Text>

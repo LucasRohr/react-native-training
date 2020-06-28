@@ -7,12 +7,16 @@ import {POKEMON_TYPES} from '../../constants';
 import {Tabs} from './components';
 
 import styles from './pokemon-details.style';
+import {hexToRGB} from '../../helpers/hex-to-rgb';
 
 const PokemonDetailsScreen = ({route, navigation}) => {
   const [pokemon, setPokemon] = useState(null);
-  const [isLoading, setIsLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
 
   const {pokemonId} = route.params;
+  const pokemonColor = pokemon
+    ? POKEMON_TYPES[pokemon.types[0].toUpperCase()].color
+    : null;
 
   const getPokemonById = async () => {
     setIsLoading(true);
@@ -37,15 +41,11 @@ const PokemonDetailsScreen = ({route, navigation}) => {
   );
 
   const renderContent = () => (
-    <View
-      style={[
-        styles.container,
-        {backgroundColor: POKEMON_TYPES[pokemon.types[0].toUpperCase()].color},
-      ]}>
+    <View style={[styles.container, {backgroundColor: pokemonColor}]}>
       <LinearGradient
         colors={[
-          POKEMON_TYPES[pokemon.types[0].toUpperCase()].color,
-          POKEMON_TYPES[pokemon.types[0].toUpperCase()].color,
+          pokemonColor,
+          hexToRGB({hex: pokemonColor, whiteAdditional: 40}),
         ]}
         start={{x: 0, y: 1}}
         end={{x: 1, y: 1}}
@@ -54,11 +54,11 @@ const PokemonDetailsScreen = ({route, navigation}) => {
           <BackButton navigation={navigation} />
         </View>
 
-        <View style={styles.content}>
-          <View style={styles.imageContainer}>
-            <Image style={styles.image} source={{uri: pokemon.image}} />
-          </View>
+        <View style={styles.imageContainer}>
+          <Image style={styles.image} source={{uri: pokemon.image}} />
+        </View>
 
+        <View style={styles.content}>
           <View style={styles.nameTypeContainer}>
             <Text style={styles.name}>{pokemon.name}</Text>
 
@@ -73,7 +73,7 @@ const PokemonDetailsScreen = ({route, navigation}) => {
     </View>
   );
 
-  return !pokemon ? <Loader /> : renderContent();
+  return isLoading ? <Loader /> : renderContent();
 };
 
 export {PokemonDetailsScreen};

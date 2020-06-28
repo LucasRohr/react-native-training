@@ -40,13 +40,13 @@ const MoveDetailsScreen = ({navigation, route}) => {
           <BackButton navigation={navigation} />
         </View>
 
-        <View style={styles.content}>
-          <TypeIcon
-            additionalStyle={styles.typeIcon}
-            iconSize={30}
-            type={move.type.name}
-          />
+        <TypeIcon
+          additionalStyle={styles.typeIcon}
+          iconSize={30}
+          type={move.type.name}
+        />
 
+        <View style={styles.content}>
           <View style={styles.nameTypeContainer}>
             <Text style={styles.name}>{move.name.replace('-', ' ')}</Text>
             <TypeTag type={move.type.name} />

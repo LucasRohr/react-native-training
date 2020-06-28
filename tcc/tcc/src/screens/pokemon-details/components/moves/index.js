@@ -6,6 +6,8 @@ import styles from './moves.style';
 import {TypeIcon} from '../../../../components';
 import {COLORS} from '../../../../constants';
 
+const EMPTY_POWER_TEXT = 'Nulo';
+
 const Moves = ({moves}) => {
   const renderMove = ({name, power, type, index}) => {
     return (
@@ -20,7 +22,7 @@ const Moves = ({moves}) => {
         ]}>
         <View style={styles.moveInfoContainer}>
           <Text style={styles.name}>{name.replace('-', ' ')}</Text>
-          <Text style={styles.power}>Poder {power}</Text>
+          <Text style={styles.power}>Poder {power || EMPTY_POWER_TEXT}</Text>
         </View>
 
         <TypeIcon type={type} />

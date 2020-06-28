@@ -31,11 +31,14 @@ export default StyleSheet.create({
   },
 
   imageContainer: {
-    width: 130,
-    height: 130,
+    width: 180,
+    height: 180,
     position: 'absolute',
-    top: -80,
-    left: 150,
+    top: 30,
+    left: 120,
+    elevation: 0.1,
+    shadowOpacity: 0,
+    shadowColor: COLORS.TRANSPARENT,
   },
 
   image: {
