@@ -1,10 +1,12 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffect, useCallback} from 'react';
+import {useFocusEffect} from '@react-navigation/native';
 import LinearGradient from 'react-native-linear-gradient';
 import {View, Text} from 'react-native';
 import {MovesService} from '../../services';
 import {Loader, BackButton, TypeIcon, TypeTag} from '../../components';
 import {POKEMON_TYPES} from '../../constants';
 import {MoveStats} from './components';
+import {hexToRGB} from '../../helpers';
 
 import styles from './move-details.style';
 
@@ -25,6 +27,25 @@ const MoveDetailsScreen = ({navigation, route}) => {
     }
   };
 
+  useFocusEffect(
+    useCallback(() => {
+      const parent = navigation.dangerouslyGetParent();
+      if (parent) {
+        parent.setOptions({
+          tabBarVisible: false,
+        });
+      }
+
+      return () => {
+        if (parent) {
+          parent.setOptions({
+            tabBarVisible: true,
+          });
+        }
+      };
+    }, [navigation.dangerouslyGetParent]),
+  );
+
   useEffect(() => {
     getMoveById();
   }, []);
@@ -32,7 +53,7 @@ const MoveDetailsScreen = ({navigation, route}) => {
   const renderContent = () => (
     <View style={[styles.container, {backgroundColor: moveColor}]}>
       <LinearGradient
-        colors={[moveColor, moveColor]}
+        colors={[moveColor, hexToRGB({hex: moveColor, whiteAdditional: 50})]}
         start={{x: 0, y: 1}}
         end={{x: 1, y: 1}}
         style={styles.gradient}>

@@ -1,13 +1,14 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffect, useCallback} from 'react';
+import {useFocusEffect} from '@react-navigation/native';
 import LinearGradient from 'react-native-linear-gradient';
 import {Loader, BackButton, TypeTag} from '../../components';
 import {PokemonService} from '../../services';
 import {View, Image, Text} from 'react-native';
 import {POKEMON_TYPES} from '../../constants';
 import {Tabs} from './components';
+import {hexToRGB} from '../../helpers/hex-to-rgb';
 
 import styles from './pokemon-details.style';
-import {hexToRGB} from '../../helpers/hex-to-rgb';
 
 const PokemonDetailsScreen = ({route, navigation}) => {
   const [pokemon, setPokemon] = useState(null);
@@ -28,6 +29,25 @@ const PokemonDetailsScreen = ({route, navigation}) => {
     }
   };
 
+  useFocusEffect(
+    useCallback(() => {
+      const parent = navigation.dangerouslyGetParent();
+      if (parent) {
+        parent.setOptions({
+          tabBarVisible: false,
+        });
+      }
+
+      return () => {
+        if (parent) {
+          parent.setOptions({
+            tabBarVisible: true,
+          });
+        }
+      };
+    }, [navigation.dangerouslyGetParent]),
+  );
+
   useEffect(() => {
     getPokemonById();
   }, []);
@@ -45,7 +65,7 @@ const PokemonDetailsScreen = ({route, navigation}) => {
       <LinearGradient
         colors={[
           pokemonColor,
-          hexToRGB({hex: pokemonColor, whiteAdditional: 40}),
+          hexToRGB({hex: pokemonColor, whiteAdditional: 50}),
         ]}
         start={{x: 0, y: 1}}
         end={{x: 1, y: 1}}

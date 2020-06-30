@@ -1,25 +1,13 @@
 import React from 'react';
-import {COLORS} from '../../constants';
 import {createStackNavigator} from '@react-navigation/stack';
 import {PokemonScreen, PokemonDetailsScreen} from '../../screens';
+import {HEADER_CONFIG} from '../header-config';
 
 const Stack = createStackNavigator();
 
 const PokemonStack = () => {
   return (
-    <Stack.Navigator
-      screenOptions={{
-        headerTitleAlign: 'center',
-        headerTintColor: COLORS.BLACK,
-
-        headerStyle: {
-          elevation: 0,
-          shadowOpacity: 0,
-          borderBottomWidth: 3,
-          backgroundColor: COLORS.TAB,
-          borderBottomColor: COLORS.TAB_STRONG,
-        },
-      }}>
+    <Stack.Navigator screenOptions={HEADER_CONFIG}>
       <Stack.Screen
         options={{title: 'Pokemon'}}
         component={PokemonScreen}

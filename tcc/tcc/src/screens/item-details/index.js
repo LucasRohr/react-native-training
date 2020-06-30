@@ -1,4 +1,5 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffect, useCallback} from 'react';
+import {useFocusEffect} from '@react-navigation/native';
 import LinearGradient from 'react-native-linear-gradient';
 import {View, Text, Image} from 'react-native';
 import {ItemsService} from '../../services';
@@ -22,6 +23,25 @@ const ItemDetailsScreen = ({navigation, route}) => {
       setIsLoading(false);
     }
   };
+
+  useFocusEffect(
+    useCallback(() => {
+      const parent = navigation.dangerouslyGetParent();
+      if (parent) {
+        parent.setOptions({
+          tabBarVisible: false,
+        });
+      }
+
+      return () => {
+        if (parent) {
+          parent.setOptions({
+            tabBarVisible: true,
+          });
+        }
+      };
+    }, [navigation.dangerouslyGetParent]),
+  );
 
   useEffect(() => {
     getItemById();
