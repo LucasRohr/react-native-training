@@ -1,5 +1,4 @@
-import React, {useState, useEffect, useCallback} from 'react';
-import {useFocusEffect} from '@react-navigation/native';
+import React, {useState, useEffect} from 'react';
 import LinearGradient from 'react-native-linear-gradient';
 import {View, Text} from 'react-native';
 import {MovesService} from '../../services';
@@ -26,25 +25,6 @@ const MoveDetailsScreen = ({navigation, route}) => {
       setIsLoading(false);
     }
   };
-
-  useFocusEffect(
-    useCallback(() => {
-      const parent = navigation.dangerouslyGetParent();
-      if (parent) {
-        parent.setOptions({
-          tabBarVisible: false,
-        });
-      }
-
-      return () => {
-        if (parent) {
-          parent.setOptions({
-            tabBarVisible: true,
-          });
-        }
-      };
-    }, [navigation.dangerouslyGetParent]),
-  );
 
   useEffect(() => {
     getMoveById();

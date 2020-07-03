@@ -7,12 +7,30 @@ import {CustomIcon} from './components';
 import {COLORS} from './constants';
 import {PokemonStack, MovesStack, ItemsStack} from './stacks';
 
+const hiddenTabScreens = [
+  'PokemonDetailsScreen',
+  'MoveDetailsScreen',
+  'ItemDetailsScreen',
+];
+
 const BottomTab = createBottomTabNavigator();
 
 const App = () => {
   useEffect(() => {
     SplashScreen.hide();
   }, []);
+
+  const getTabBarVisibility = route => {
+    const routeName = route.state
+      ? route.state.routes[route.state.index].name
+      : '';
+
+    if (hiddenTabScreens.includes(routeName)) {
+      return false;
+    }
+
+    return true;
+  };
 
   const renderIcon = ({focused, name}) => (
     <CustomIcon
@@ -49,28 +67,31 @@ const App = () => {
           },
         }}>
         <BottomTab.Screen
-          options={{
+          options={({route}) => ({
             title: 'Pokemon',
             tabBarIcon: ({focused}) => renderIcon({focused, name: 'pokemon'}),
-          }}
+            tabBarVisible: getTabBarVisibility(route),
+          })}
           component={PokemonStack}
           name="PokemonStack"
         />
 
         <BottomTab.Screen
-          options={{
+          options={({route}) => ({
             title: 'Moves',
             tabBarIcon: ({focused}) => renderIcon({focused, name: 'moves'}),
-          }}
+            tabBarVisible: getTabBarVisibility(route),
+          })}
           component={MovesStack}
           name="MovesStack"
         />
 
         <BottomTab.Screen
-          options={{
+          options={({route}) => ({
             title: 'Items',
             tabBarIcon: ({focused}) => renderIcon({focused, name: 'itens'}),
-          }}
+            tabBarVisible: getTabBarVisibility(route),
+          })}
           component={ItemsStack}
           name="ItemsStack"
         />
